@@ -48,3 +48,18 @@ Enhanced UI/UX
 
 SQL injection protection
 
+## 🚀 Deployment on Render
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
+
+1. Click the "Deploy to Render" button above
+2. Connect your GitHub account
+3. Select repository
+4. Add these environment variables:
+   - **Key:** `PORT`  
+     **Value:** `5000`
+5. Under "Advanced":
+   ```text
+   Build Command: pip install -r requirements.txt
+   Start Command: gunicorn app:app
+My Deployment link: https://chat-assistant-2-hxw7.onrender.com/
