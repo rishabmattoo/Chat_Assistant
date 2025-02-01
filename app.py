@@ -1,4 +1,9 @@
 import os
+from database.create_db import initialize_database
+
+# Ensure database is created before the app starts
+initialize_database()
+
 
 
 from flask import Flask, render_template, request, jsonify
